@@ -1,0 +1,14 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Sets if the mod should print documentation.
+printDocumentation(false)
+
+//Sets the Topography WorldType as default
+setAsDefaultWorldType()
+
+//Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
+GTH = registerPreset("Xtreme! Skyblock", "images/SF4mk2", "Xtreme! Skyblock world type starting on a tree in the void")
+GTH.registerDimension(0, "GTH/dirt_tree")
+GTH.registerDimension(-1, "GTH/nether_cell")
+GTH.addInitialPlayerFunction("triumph:start_standard")
+GTH.disableNetherPortal()
